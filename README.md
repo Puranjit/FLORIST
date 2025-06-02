@@ -1,6 +1,5 @@
 # FLORIST: Flower Label-maker from Open source Research-grade Imagery via Self supervised Transformer 
-This repository contains the source code and instruction for running: FLORIST: Flower Label-maker from Open-source Research-grade Imagery via Self-supervised Transformer.
-
+This repository contains the source code and instruction for running: FLORIST: Flower Label-maker from Open source Research-grade Imagery via Self supervised Transformer.
 
 ## Citizen science observations
 Switchgrass, big bluestem, little bluestem, and Indiangrass are four major warm-season perennial grasses of the North American prairie. Research-grade photos of these four species with observation dates before January 1, 2023 were downloaded from the Global Biodiversity Information Facility repository (GBIF, www.GBIF.org) using the filters of “Scientific name”, “Present” for Occurrence status, “Human observation” for Basis of record, and “United States of America” for Country or area. A total of 43,861 photos (8,248 of switchgrass [doi: 10.15468/dl.xhrwtk], 11,081 of big bluestem [doi: 10.15468/dl.2j3v6c], 12,465 of Indiangrass [doi: 10.15468/dl.yvurbw], and 12,067 of little bluestem [doi: 10.15468/dl.unst7e]) were obtained. Because multiple images could be taken of the same plant from different angles and/or distances, we defined one location-date combination as one event when evaluating the latitudinal trend.
@@ -10,7 +9,6 @@ We developed a computer vision AI named FLORIST to efficiently and effectively s
 
 # Method
 ![image](https://github.com/user-attachments/assets/dfe5c489-f717-44b3-81f9-cff16164db6c)
-
 
 # Install
 Pip install all requirements in a Python>=3.8 environment with PyTorch>=1.8
