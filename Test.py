@@ -110,3 +110,11 @@ print(classification_report(test_y, test_predictions, labels=list(set(test_y))))
 print(f1_score(test_y, test_predictions, average="weighted")) # "macro"
 print(precision_score(test_y, test_predictions, average="weighted")) # "macro"
 print(recall_score(test_y, test_predictions, average="weighted")) # "macro"
+
+
+# We can also train multiple Regression-based ML models using 'LazyPredict' library
+from lazypredict.Supervised import LazyClassifier
+
+clf = LazyClassifier(verbose=0,ignore_warnings=True, custom_metric=None)
+models, predictions = clf.fit(np.array(embedding_list).reshape(-1, 1024), test_embeddings, y, test_y)
+models

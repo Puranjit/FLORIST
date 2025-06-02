@@ -14,7 +14,7 @@ import os
 import json
 from tqdm.notebook import tqdm
 from joblib import dump
-from dinov2.models import vision_transformer as vits
+# from dinov2.models import vision_transformer as vits
 
 cwd = os.getcwd()
 
