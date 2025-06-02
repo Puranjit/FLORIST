@@ -4,23 +4,15 @@ Created on Mon Nov 18 20:48:33 2024
 
 @author: puran
 """
-
 # FINAL CODE TO DOWNLOAD IMAGES
 import pandas as pd
 import os
 import requests
 from openpyxl import load_workbook
 
-
 # Read the Excel file
 file_path = "Flower classification project.xlsx"  # Replace with your Excel file path
 df = pd.read_excel(file_path)
-# file_path = "LittleB.csv"  # Replace with your Excel file path
-# df = pd.read_csv(file_path)
-
-# Create main folders for flowers and non-flowers
-# flower_folder = "Finale/Flower"
-# non_flower_folder = "Finale/Non Flower"
 
 flower_folder = "Training images/Flower"
 non_flower_folder = "Training images/Non Flower"
