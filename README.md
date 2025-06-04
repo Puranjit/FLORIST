@@ -15,3 +15,9 @@ Pip install all requirements in a Python>=3.8 environment with PyTorch>=1.8
 
 # Datasets
 The Flower classification datasets can be downloaded from the Data Collection.py script that reads the Flower classification dataset.xlsx file.
+
+# Train Test
+'Train Test.py' code extracts feature embeddings from training and testing image datasets using the DINOv2 model (Version: dinov2_vitl14), trains a Support Vector Classifier (SVC) on 320 labeled training images, and evaluates the model's performance on 1000 independent labeled test images. It outputs evaluation metric scores to assess classification accuracy between "Flower" and "Non-Flower" labels.
+
+# Final inference
+'Inference.py' code loads feature embeddings and a trained SVC model to predict labels for a full image dataset. It appends these predictions and saves the updated data to a new Excel file.
