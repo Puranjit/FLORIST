@@ -11,16 +11,16 @@ We developed a computer vision AI named FLORIST to efficiently and effectively s
 ![image](https://github.com/user-attachments/assets/dfe5c489-f717-44b3-81f9-cff16164db6c)
 
 # Install
-Pip install all requirements in a Python>=3.8 environment with PyTorch>=1.8
+Pip install all requirements in a *Python>=3.8* environment with *PyTorch>=1.8*.
 
 # Datasets
 ### Step 1
-The Flower classification datasets can be downloaded from the Data Collection.py script that reads the Flower classification dataset.xlsx file.
+The Flower classification datasets can be downloaded from the *Data Collection.py* script that reads the Flower classification dataset.xlsx file.
 
 # Train Test
 ### Step 2
-'Train Test.py' code extracts feature embeddings from training and testing image datasets using the DINOv2 model (Version: dinov2_vitl14), trains a Support Vector Classifier (SVC) on 320 labeled training images, and evaluates the model's performance on 1000 independent labeled test images. It outputs evaluation metric scores to assess classification accuracy between "Flower" and "Non-Flower" labels.
+*Train Test.py* code extracts feature embeddings from training and testing image datasets using the DINOv2 model (Version: dinov2_vitl14), trains a Support Vector Classifier (SVC) on 320 labeled training images, and evaluates the model's performance on 1000 independent labeled test images. It outputs evaluation metric scores to assess classification accuracy between "Flower" and "Non-Flower" labels.
 
 # Final inference
 ### Step 3
-'Inference.py' code loads feature embeddings and a trained SVC model to predict labels for a full image dataset. It appends these predictions and saves the updated data to a new Excel file.
+*Inference.py* code loads feature embeddings and a trained SVC model to predict labels for a full image dataset. It appends these predictions and saves the updated data to a new Excel file.
