@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 """
-Created on Sun Jun 3 21:06:36 2025
+Created on Sun Jun  1 21:06:36 2025
 
 @author: puran
 """
@@ -179,9 +179,8 @@ disp.plot(cmap=plt.cm.Blues)
 plt.show()
 
 # Generating evaluation metric scores on Testing dataset
-          
 print(classification_report(test_y, test_predictions, labels=list(set(test_y))))
 
-print(f1_score(test_y, test_predictions, average="weighted")) # "macro"
 print(precision_score(test_y, test_predictions, average="weighted")) # "macro"
 print(recall_score(test_y, test_predictions, average="weighted")) # "macro"
+print(f1_score(test_y, test_predictions, average="weighted")) # "macro"
