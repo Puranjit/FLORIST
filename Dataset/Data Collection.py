@@ -13,8 +13,7 @@ from openpyxl import load_workbook
 
 
 # Read the Excel file
-file_path = "Flower classification project.xlsx"  # Replace with your Excel file path
-df = pd.read_excel(file_path)
+df = pd.read_excel('Flower classification project.xlsx', sheet_name='Full dataset')
 
 # Initialize variables
 current_species = None  # To track the current species
@@ -139,11 +138,3 @@ feature_embeddings = compute_embeddings(files)
 
 # Saving feature embeddings of all the images in flower classification dataset
 np.save('feature_embeddings.npy', feature_embeddings)
-
-from joblib import load
-
-# Load the trained SVC model 
-clf = load('svc_model.joblib')
-
-# Use it to make predictions on the full dataset
-y_pred = clf.predict(feature_embeddings)
