@@ -12,6 +12,7 @@ We developed a computer vision AI named FLORIST to efficiently and effectively s
 
 # Install
 Pip install all requirements in a *Python>=3.8* environment with *PyTorch>=1.8*.
+#### Set up a new Conda environment, activate it, and then execute the following command: pip install -r requirements.txt
 
 # Datasets
 ### Step 1
