@@ -139,3 +139,11 @@ feature_embeddings = compute_embeddings(files)
 
 # Saving feature embeddings of all the images in flower classification dataset
 np.save('feature_embeddings.npy', feature_embeddings)
+
+from joblib import load
+
+# Load the trained SVC model 
+clf = load('svc_model.joblib')
+
+# Use it to make predictions on the full dataset
+y_pred = clf.predict(feature_embeddings)
