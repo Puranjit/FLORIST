@@ -14,4 +14,4 @@ We developed a computer vision AI named FLORIST to efficiently and effectively s
 Pip install all requirements in a Python>=3.8 environment with PyTorch>=1.8
 
 # Datasets
-The Flower classification datasets can be downloaded from files in the Dataset folder
+The Flower classification datasets can be downloaded from the Data Collection.py script that reads the Flower classification dataset.xlsx file.
